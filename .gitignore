@@ -5,3 +5,5 @@ dist.zip
 
 # JetBrains Rider
 sharp/.idea/
+
+luarocks/
