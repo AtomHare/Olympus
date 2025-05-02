@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # =======================================================
-sudo add-apt-repository ppa:bartbes/love-stable -y
+#sudo add-apt-repository ppa:bartbes/love-stable -y
 sudo apt-get update
-sudo apt-get install love luarocks libgtk-3-dev -y
+sudo apt-get install love luajit libphysfs-dev luarocks libgtk-3-dev -y
 
 # not needed
 # luarocks config lua_version 5.1

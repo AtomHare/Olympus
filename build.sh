@@ -2,7 +2,7 @@
 
 mkdir -p love
 dotnet restore sharp/*.csproj
-dotnet publish sharp/*.csproj --runtime linux-x64
+dotnet publish sharp/*.csproj --runtime linux-x64 --self-contained
 
 cp -rfv sharp/bin/Release/net8.0/linux-x64/publish love/sharp
 

@@ -7,7 +7,9 @@
 local physfs = {}
 
 local ffi = require("ffi")
-local l = ffi.os == "Windows" and ffi.load("love") or ffi.C
+local physfs_path = "/lib/x86_64-linux-gnu/libphysfs.so"
+local l = ffi.os == "Windows" and ffi.load("physfs") or ffi.C
+local l = ffi.load(physfs_path)
 
 ffi.cdef [[
     int PHYSFS_mount(const char *newDir, const char *mountPoint, int appendToPath);
